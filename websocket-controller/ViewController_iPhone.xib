@@ -11,8 +11,10 @@
                 <outlet property="accelerateButton" destination="uWO-bN-l8w" id="lhR-AR-5nU"/>
                 <outlet property="accelerationLabel" destination="9Ad-16-BSs" id="Na4-Cc-vPA"/>
                 <outlet property="angleLabel" destination="8f7-Tj-WBW" id="Kb7-Nf-FJC"/>
+                <outlet property="decelerateButton" destination="0yX-qE-lxg" id="yWc-hM-Bvm"/>
                 <outlet property="radiusLabel" destination="dhC-JB-VjH" id="Mc5-VC-14V"/>
-                <outlet property="swiftJoystick" destination="HL1-XM-gBb" id="zWc-p4-9RN"/>
+                <outlet property="serverIPTextField" destination="Cje-mE-f5n" id="XRQ-1P-cO8"/>
+                <outlet property="swiftJoystick" destination="sNL-XA-T9J" id="ONC-Wx-Aul"/>
                 <outlet property="view" destination="6" id="7"/>
             </connections>
         </placeholder>
@@ -25,28 +27,35 @@
                     <frame key="frameInset" minX="8" minY="22" width="95" height="34"/>
                     <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                     <fontDescription key="fontDescription" name="HelveticaNeue-Light" family="Helvetica Neue" pointSize="18"/>
-                    <state key="normal" title="Angle: ?">
+                    <state key="normal" title="Angle: 0.00">
                         <color key="titleColor" red="0.30963331649999998" green="0.59976688509999998" blue="0.85250756049999998" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <color key="titleShadowColor" red="0.5" green="0.5" blue="0.5" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                     </state>
                 </button>
                 <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="9Ad-16-BSs">
-                    <frame key="frameInset" minX="410" minY="22" width="150" height="34"/>
+                    <frame key="frameInset" minX="497" minY="22" width="150" height="34"/>
                     <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                     <fontDescription key="fontDescription" name="HelveticaNeue-Light" family="Helvetica Neue" pointSize="18"/>
-                    <state key="normal" title="Acceleration: 0">
+                    <state key="normal" title="Acceleration: 0.00">
                         <color key="titleColor" red="0.30963331649999998" green="0.59976688509999998" blue="0.85250756049999998" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <color key="titleShadowColor" red="0.5" green="0.5" blue="0.5" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                     </state>
                 </button>
                 <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="uWO-bN-l8w">
-                    <frame key="frameInset" minX="512" minY="223" width="30" height="30"/>
+                    <frame key="frameInset" minX="540" minY="168" width="100" height="100"/>
                     <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                    <color key="backgroundColor" red="0.033401102925482533" green="0.21018841392910662" blue="0.69945549242424243" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    <color key="backgroundColor" red="0.18290653824806213" green="0.42362713813781738" blue="0.081629194319248199" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                     <fontDescription key="fontDescription" type="boldSystem" pointSize="15"/>
                     <state key="normal" title="A">
                         <color key="titleColor" cocoaTouchSystemColor="groupTableViewBackgroundColor"/>
                     </state>
+                    <userDefinedRuntimeAttributes>
+                        <userDefinedRuntimeAttribute type="string" keyPath="layer.cornerRadius" value="50"/>
+                        <userDefinedRuntimeAttribute type="string" keyPath="layer.borderWidth" value="2"/>
+                        <userDefinedRuntimeAttribute type="color" keyPath="layer.borderColorFront">
+                            <color key="value" red="0.99607473611831665" green="0.99220293760299683" blue="0.99199241399765015" alpha="0.70510563380281688" colorSpace="custom" customColorSpace="sRGB"/>
+                        </userDefinedRuntimeAttribute>
+                    </userDefinedRuntimeAttributes>
                     <connections>
                         <action selector="accDown:" destination="-1" eventType="touchDragEnter" id="ab8-xZ-sLh"/>
                         <action selector="accDown:" destination="-1" eventType="touchDown" id="mEz-dE-cAP"/>
@@ -55,14 +64,44 @@
                         <action selector="stopAccChange:" destination="-1" eventType="touchUpInside" id="cxk-NT-ye2"/>
                     </connections>
                 </button>
+                <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="dhC-JB-VjH">
+                    <frame key="frameInset" minX="102" minY="22" width="116" height="34"/>
+                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                    <fontDescription key="fontDescription" name="HelveticaNeue-Light" family="Helvetica Neue" pointSize="18"/>
+                    <state key="normal" title="Radius: 0.00">
+                        <color key="titleColor" red="0.30963331649999998" green="0.59976688509999998" blue="0.85250756049999998" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <color key="titleShadowColor" red="0.5" green="0.5" blue="0.5" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    </state>
+                </button>
+                <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" text="192.168.10.1:9002" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="Cje-mE-f5n">
+                    <frame key="frameInset" minX="257" minY="22" width="174" height="30"/>
+                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                    <nil key="textColor"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                    <textInputTraits key="textInputTraits"/>
+                    <connections>
+                        <action selector="updateWebSocket:" destination="-1" eventType="touchUpOutside" id="B0f-nh-nfT"/>
+                    </connections>
+                </textField>
+                <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="sNL-XA-T9J" customClass="MFLSwiftJoystickImplementation" customModule="websocket_controller">
+                    <frame key="frameInset" minX="40" minY="184" width="164" height="160"/>
+                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                </view>
                 <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="0yX-qE-lxg">
-                    <frame key="frameInset" minX="459" minY="275" width="30" height="30"/>
+                    <frame key="frameInset" minX="455" minY="244" width="100" height="100"/>
                     <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                     <color key="backgroundColor" red="0.69945549242424243" green="0.14510538564987516" blue="0.18747302673345648" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                     <fontDescription key="fontDescription" type="boldSystem" pointSize="15"/>
                     <state key="normal" title="D">
                         <color key="titleColor" cocoaTouchSystemColor="groupTableViewBackgroundColor"/>
                     </state>
+                    <userDefinedRuntimeAttributes>
+                        <userDefinedRuntimeAttribute type="string" keyPath="layer.cornerRadius" value="50"/>
+                        <userDefinedRuntimeAttribute type="string" keyPath="layer.borderWidth" value="2"/>
+                        <userDefinedRuntimeAttribute type="color" keyPath="layer.borderColorFront">
+                            <color key="value" red="0.99607473611831665" green="0.99220293760299683" blue="0.99199241399765015" alpha="0.70510563380000002" colorSpace="custom" customColorSpace="sRGB"/>
+                        </userDefinedRuntimeAttribute>
+                    </userDefinedRuntimeAttributes>
                     <connections>
                         <action selector="decDown:" destination="-1" eventType="touchDown" id="8K2-Bg-Glz"/>
                         <action selector="decDown:" destination="-1" eventType="touchDragEnter" id="Ipy-Fz-bR7"/>
@@ -71,26 +110,9 @@
                         <action selector="stopAccChange:" destination="-1" eventType="touchUpOutside" id="xm5-d7-QxO"/>
                     </connections>
                 </button>
-                <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="HL1-XM-gBb" userLabel="Swift Joystick" customClass="MFLSwiftJoystickImplementation" customModule="JoyStickDemo">
-                    <frame key="frameInset" minY="192" width="128" height="128"/>
-                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                    <color key="backgroundColor" red="0.33333333333333331" green="0.33333333333333331" blue="0.33333333333333331" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                    <connections>
-                        <outlet property="delegate" destination="-1" id="Fe1-QA-XDe"/>
-                    </connections>
-                </view>
-                <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="dhC-JB-VjH">
-                    <frame key="frameInset" minX="102" minY="22" width="116" height="34"/>
-                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                    <fontDescription key="fontDescription" name="HelveticaNeue-Light" family="Helvetica Neue" pointSize="18"/>
-                    <state key="normal" title="Radius: ?">
-                        <color key="titleColor" red="0.30963331649999998" green="0.59976688509999998" blue="0.85250756049999998" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                        <color key="titleShadowColor" red="0.5" green="0.5" blue="0.5" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                    </state>
-                </button>
             </subviews>
-            <color key="backgroundColor" red="0.33333333333333331" green="0.33333333333333331" blue="0.33333333333333331" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-            <point key="canvasLocation" x="1221" y="413"/>
+            <color key="backgroundColor" red="0.061922095715999603" green="0.062565751373767853" blue="0.19157415628433228" alpha="0.7194377200704225" colorSpace="custom" customColorSpace="sRGB"/>
+            <point key="canvasLocation" x="1220.5" y="412.5"/>
         </view>
     </objects>
     <simulatedMetricsContainer key="defaultSimulatedMetrics">

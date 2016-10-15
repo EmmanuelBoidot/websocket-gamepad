@@ -10,12 +10,23 @@
 		3212F9C51DB20EA900F8EB46 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 3212F9C41DB20EA900F8EB46 /* main.m */; };
 		3212F9C81DB20EA900F8EB46 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 3212F9C71DB20EA900F8EB46 /* AppDelegate.m */; };
 		3212F9CB1DB20EA900F8EB46 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 3212F9CA1DB20EA900F8EB46 /* ViewController.m */; };
-		3212F9CE1DB20EA900F8EB46 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3212F9CC1DB20EA900F8EB46 /* Main.storyboard */; };
 		3212F9D11DB20EA900F8EB46 /* websocket_controller.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 3212F9CF1DB20EA900F8EB46 /* websocket_controller.xcdatamodeld */; };
 		3212F9D31DB20EA900F8EB46 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 3212F9D21DB20EA900F8EB46 /* Assets.xcassets */; };
-		3212F9D61DB20EA900F8EB46 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3212F9D41DB20EA900F8EB46 /* LaunchScreen.storyboard */; };
 		3212F9E11DB20EAA00F8EB46 /* websocket_controllerTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 3212F9E01DB20EAA00F8EB46 /* websocket_controllerTests.m */; };
 		3212F9EC1DB20EAA00F8EB46 /* websocket_controllerUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = 3212F9EB1DB20EAA00F8EB46 /* websocket_controllerUITests.m */; };
+		3212F9FD1DB2100800F8EB46 /* MFLSwiftJoystick.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3212F9FC1DB2100800F8EB46 /* MFLSwiftJoystick.swift */; };
+		3212FA021DB2133E00F8EB46 /* joy_thumb.png in Resources */ = {isa = PBXBuildFile; fileRef = 3212F9FF1DB2133E00F8EB46 /* joy_thumb.png */; };
+		3212FA031DB2133E00F8EB46 /* joy_thumb@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 3212FA001DB2133E00F8EB46 /* joy_thumb@2x.png */; };
+		3212FA041DB2133E00F8EB46 /* stick_base.png in Resources */ = {isa = PBXBuildFile; fileRef = 3212FA011DB2133E00F8EB46 /* stick_base.png */; };
+		3212FA0B1DB2171D00F8EB46 /* Default.png in Resources */ = {isa = PBXBuildFile; fileRef = 3212FA081DB2171D00F8EB46 /* Default.png */; };
+		3212FA0C1DB2171D00F8EB46 /* Default@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 3212FA091DB2171D00F8EB46 /* Default@2x.png */; };
+		3212FA0D1DB2171D00F8EB46 /* Default-568h@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 3212FA0A1DB2171D00F8EB46 /* Default-568h@2x.png */; };
+		3212FA121DB2228A00F8EB46 /* ViewController_iPhone.xib in Resources */ = {isa = PBXBuildFile; fileRef = 3212FA111DB2228A00F8EB46 /* ViewController_iPhone.xib */; };
+		3212FA161DB22B3A00F8EB46 /* websocket.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3212FA151DB22B3A00F8EB46 /* websocket.swift */; };
+		3212FA1B1DB22C4A00F8EB46 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3212FA181DB22C4A00F8EB46 /* CoreGraphics.framework */; };
+		3212FA1C1DB22C4A00F8EB46 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3212FA191DB22C4A00F8EB46 /* Foundation.framework */; };
+		3212FA1D1DB22C4A00F8EB46 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3212FA1A1DB22C4A00F8EB46 /* UIKit.framework */; };
+		3212FA1F1DB22C5900F8EB46 /* libz.1.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 3212FA1E1DB22C5900F8EB46 /* libz.1.dylib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -42,10 +53,8 @@
 		3212F9C71DB20EA900F8EB46 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
 		3212F9C91DB20EA900F8EB46 /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
 		3212F9CA1DB20EA900F8EB46 /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
-		3212F9CD1DB20EA900F8EB46 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		3212F9D01DB20EA900F8EB46 /* websocket_controller.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = websocket_controller.xcdatamodel; sourceTree = "<group>"; };
 		3212F9D21DB20EA900F8EB46 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
-		3212F9D51DB20EA900F8EB46 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		3212F9D71DB20EA900F8EB46 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		3212F9DC1DB20EAA00F8EB46 /* websocket-controllerTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "websocket-controllerTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		3212F9E01DB20EAA00F8EB46 /* websocket_controllerTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = websocket_controllerTests.m; sourceTree = "<group>"; };
@@ -53,6 +62,20 @@
 		3212F9E71DB20EAA00F8EB46 /* websocket-controllerUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "websocket-controllerUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		3212F9EB1DB20EAA00F8EB46 /* websocket_controllerUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = websocket_controllerUITests.m; sourceTree = "<group>"; };
 		3212F9ED1DB20EAA00F8EB46 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		3212F9FB1DB2100800F8EB46 /* websocket-controller-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "websocket-controller-Bridging-Header.h"; sourceTree = "<group>"; };
+		3212F9FC1DB2100800F8EB46 /* MFLSwiftJoystick.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MFLSwiftJoystick.swift; sourceTree = "<group>"; };
+		3212F9FF1DB2133E00F8EB46 /* joy_thumb.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = joy_thumb.png; sourceTree = "<group>"; };
+		3212FA001DB2133E00F8EB46 /* joy_thumb@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "joy_thumb@2x.png"; sourceTree = "<group>"; };
+		3212FA011DB2133E00F8EB46 /* stick_base.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = stick_base.png; sourceTree = "<group>"; };
+		3212FA081DB2171D00F8EB46 /* Default.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Default.png; sourceTree = "<group>"; };
+		3212FA091DB2171D00F8EB46 /* Default@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default@2x.png"; sourceTree = "<group>"; };
+		3212FA0A1DB2171D00F8EB46 /* Default-568h@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default-568h@2x.png"; sourceTree = "<group>"; };
+		3212FA111DB2228A00F8EB46 /* ViewController_iPhone.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ViewController_iPhone.xib; sourceTree = "<group>"; };
+		3212FA151DB22B3A00F8EB46 /* websocket.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = websocket.swift; sourceTree = "<group>"; };
+		3212FA181DB22C4A00F8EB46 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
+		3212FA191DB22C4A00F8EB46 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		3212FA1A1DB22C4A00F8EB46 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
+		3212FA1E1DB22C5900F8EB46 /* libz.1.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libz.1.dylib; path = ../../../../../usr/lib/libz.1.dylib; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -60,6 +83,10 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				3212FA1F1DB22C5900F8EB46 /* libz.1.dylib in Frameworks */,
+				3212FA1B1DB22C4A00F8EB46 /* CoreGraphics.framework in Frameworks */,
+				3212FA1C1DB22C4A00F8EB46 /* Foundation.framework in Frameworks */,
+				3212FA1D1DB22C4A00F8EB46 /* UIKit.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -87,6 +114,7 @@
 				3212F9DF1DB20EAA00F8EB46 /* websocket-controllerTests */,
 				3212F9EA1DB20EAA00F8EB46 /* websocket-controllerUITests */,
 				3212F9C11DB20EA900F8EB46 /* Products */,
+				3212FA171DB22C4900F8EB46 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -107,11 +135,12 @@
 				3212F9C71DB20EA900F8EB46 /* AppDelegate.m */,
 				3212F9C91DB20EA900F8EB46 /* ViewController.h */,
 				3212F9CA1DB20EA900F8EB46 /* ViewController.m */,
-				3212F9CC1DB20EA900F8EB46 /* Main.storyboard */,
 				3212F9D21DB20EA900F8EB46 /* Assets.xcassets */,
-				3212F9D41DB20EA900F8EB46 /* LaunchScreen.storyboard */,
 				3212F9D71DB20EA900F8EB46 /* Info.plist */,
 				3212F9CF1DB20EA900F8EB46 /* websocket_controller.xcdatamodeld */,
+				3212FA111DB2228A00F8EB46 /* ViewController_iPhone.xib */,
+				3212F9FC1DB2100800F8EB46 /* MFLSwiftJoystick.swift */,
+				3212FA151DB22B3A00F8EB46 /* websocket.swift */,
 				3212F9C31DB20EA900F8EB46 /* Supporting Files */,
 			);
 			path = "websocket-controller";
@@ -120,7 +149,9 @@
 		3212F9C31DB20EA900F8EB46 /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
+				3212F9FE1DB2132100F8EB46 /* Images */,
 				3212F9C41DB20EA900F8EB46 /* main.m */,
+				3212F9FB1DB2100800F8EB46 /* websocket-controller-Bridging-Header.h */,
 			);
 			name = "Supporting Files";
 			sourceTree = "<group>";
@@ -141,6 +172,30 @@
 				3212F9ED1DB20EAA00F8EB46 /* Info.plist */,
 			);
 			path = "websocket-controllerUITests";
+			sourceTree = "<group>";
+		};
+		3212F9FE1DB2132100F8EB46 /* Images */ = {
+			isa = PBXGroup;
+			children = (
+				3212FA081DB2171D00F8EB46 /* Default.png */,
+				3212FA091DB2171D00F8EB46 /* Default@2x.png */,
+				3212FA0A1DB2171D00F8EB46 /* Default-568h@2x.png */,
+				3212F9FF1DB2133E00F8EB46 /* joy_thumb.png */,
+				3212FA001DB2133E00F8EB46 /* joy_thumb@2x.png */,
+				3212FA011DB2133E00F8EB46 /* stick_base.png */,
+			);
+			name = Images;
+			sourceTree = "<group>";
+		};
+		3212FA171DB22C4900F8EB46 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				3212FA1E1DB22C5900F8EB46 /* libz.1.dylib */,
+				3212FA181DB22C4A00F8EB46 /* CoreGraphics.framework */,
+				3212FA191DB22C4A00F8EB46 /* Foundation.framework */,
+				3212FA1A1DB22C4A00F8EB46 /* UIKit.framework */,
+			);
+			name = Frameworks;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -211,6 +266,7 @@
 					3212F9BF1DB20EA900F8EB46 = {
 						CreatedOnToolsVersion = 8.0;
 						DevelopmentTeam = YQ6SH7DT7N;
+						LastSwiftMigration = 0800;
 						ProvisioningStyle = Automatic;
 					};
 					3212F9DB1DB20EAA00F8EB46 = {
@@ -252,9 +308,14 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				3212F9D61DB20EA900F8EB46 /* LaunchScreen.storyboard in Resources */,
+				3212FA0C1DB2171D00F8EB46 /* Default@2x.png in Resources */,
 				3212F9D31DB20EA900F8EB46 /* Assets.xcassets in Resources */,
-				3212F9CE1DB20EA900F8EB46 /* Main.storyboard in Resources */,
+				3212FA0D1DB2171D00F8EB46 /* Default-568h@2x.png in Resources */,
+				3212FA121DB2228A00F8EB46 /* ViewController_iPhone.xib in Resources */,
+				3212FA041DB2133E00F8EB46 /* stick_base.png in Resources */,
+				3212FA021DB2133E00F8EB46 /* joy_thumb.png in Resources */,
+				3212FA0B1DB2171D00F8EB46 /* Default.png in Resources */,
+				3212FA031DB2133E00F8EB46 /* joy_thumb@2x.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -282,7 +343,9 @@
 				3212F9CB1DB20EA900F8EB46 /* ViewController.m in Sources */,
 				3212F9D11DB20EA900F8EB46 /* websocket_controller.xcdatamodeld in Sources */,
 				3212F9C81DB20EA900F8EB46 /* AppDelegate.m in Sources */,
+				3212F9FD1DB2100800F8EB46 /* MFLSwiftJoystick.swift in Sources */,
 				3212F9C51DB20EA900F8EB46 /* main.m in Sources */,
+				3212FA161DB22B3A00F8EB46 /* websocket.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -316,25 +379,6 @@
 			targetProxy = 3212F9E81DB20EAA00F8EB46 /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
-
-/* Begin PBXVariantGroup section */
-		3212F9CC1DB20EA900F8EB46 /* Main.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				3212F9CD1DB20EA900F8EB46 /* Base */,
-			);
-			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
-		3212F9D41DB20EA900F8EB46 /* LaunchScreen.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				3212F9D51DB20EA900F8EB46 /* Base */,
-			);
-			name = LaunchScreen.storyboard;
-			sourceTree = "<group>";
-		};
-/* End PBXVariantGroup section */
 
 /* Begin XCBuildConfiguration section */
 		3212F9EE1DB20EAA00F8EB46 /* Debug */ = {
@@ -431,11 +475,18 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
+				DEFINES_MODULE = YES;
 				DEVELOPMENT_TEAM = YQ6SH7DT7N;
 				INFOPLIST_FILE = "websocket-controller/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "us.populabs.websocket-controller";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "websocket-controller/websocket-controller-Bridging-Header.h";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 3.0;
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Debug;
 		};
@@ -443,17 +494,24 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
+				DEFINES_MODULE = YES;
 				DEVELOPMENT_TEAM = YQ6SH7DT7N;
 				INFOPLIST_FILE = "websocket-controller/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "us.populabs.websocket-controller";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "websocket-controller/websocket-controller-Bridging-Header.h";
+				SWIFT_VERSION = 3.0;
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Release;
 		};
 		3212F9F41DB20EAA00F8EB46 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				DEVELOPMENT_TEAM = YQ6SH7DT7N;
 				INFOPLIST_FILE = "websocket-controllerTests/Info.plist";
@@ -467,6 +525,7 @@
 		3212F9F51DB20EAA00F8EB46 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				DEVELOPMENT_TEAM = YQ6SH7DT7N;
 				INFOPLIST_FILE = "websocket-controllerTests/Info.plist";
@@ -480,6 +539,7 @@
 		3212F9F71DB20EAA00F8EB46 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				DEVELOPMENT_TEAM = YQ6SH7DT7N;
 				INFOPLIST_FILE = "websocket-controllerUITests/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
@@ -492,6 +552,7 @@
 		3212F9F81DB20EAA00F8EB46 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				DEVELOPMENT_TEAM = YQ6SH7DT7N;
 				INFOPLIST_FILE = "websocket-controllerUITests/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
